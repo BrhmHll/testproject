@@ -1,0 +1,19 @@
+<mvc:View controllerName="com.vesacons.testproject.controller.App"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <App id="app">
+        <pages>
+            <Page title="{i18n>appTitle}">
+                <List items="{dataModel>/employees}">
+                    <items>
+                        <StandardListItem 
+                            title="{dataModel>Vorna} {dataModel>Nachn}"
+                            description="{dataModel>Pernr}"
+                        />
+                    </items>
+                </List>
+                
+            </Page>
+        </pages>
+    </App>
+</mvc:View>
